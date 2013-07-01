@@ -3,7 +3,7 @@
   <groupId>iSelenium</groupId>
   <artifactId>iSelenium</artifactId>
   <packaging>war</packaging>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>Selenium Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
@@ -16,6 +16,12 @@
   </dependencies>
   
   <build>
+      <resources>
+          <resource>
+              <directory>src/main/resources</directory>
+              
+              </resource>
+     </resources>
 		<finalName>iSelenium</finalName>
 		<plugins>
 			<plugin>
