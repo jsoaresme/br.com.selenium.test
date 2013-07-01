@@ -2,27 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>iSelenium</groupId>
   <artifactId>iSelenium</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <build>
-      <resources>
-          <resource>
-              <directory>src/main/resources</directory>
-          </resource>
-      </resources>
-      
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  
+  <packaging>war</packaging>
+  <version>1.0.0</version>
+  <name>Selenium Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+   
   <dependencies>
       <dependency>
 		<groupId>junit</groupId>
@@ -30,4 +14,24 @@
 		<version>4.10</version>
 	</dependency>
   </dependencies>
+  
+  <build>
+		<finalName>iSelenium</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
